@@ -1,3 +1,7 @@
+## LeetCode 180: Consecutive Numbers
+
+### Problem Schema
+
 **Table**: Logs
 ```
 +-------------+---------+
@@ -7,9 +11,10 @@
 | num         | varchar |
 +-------------+---------+
 In SQL, id is the primary key for this table.
-id is an autoincrement column starting from 1.```
+id is an autoincrement column starting from 1.
+```
  
-
+### Problem Description
 Find all numbers that appear at least three times consecutively.
 
 Return the result table in any order.
@@ -17,11 +22,12 @@ Return the result table in any order.
 The result format is in the following example.
 
  
-
+### Example
 Example 1:
 
-Input: 
+**Input:**
 Logs table:
+```text
 +----+-----+
 | id | num |
 +----+-----+
@@ -33,10 +39,15 @@ Logs table:
 | 6  | 2   |
 | 7  | 2   |
 +----+-----+
+```
 Output: 
+```text
 +-----------------+
 | ConsecutiveNums |
 +-----------------+
 | 1               |
 +-----------------+
+```
+
+### Explanation
 Explanation: 1 is the only number that appears consecutively for at least three times.
